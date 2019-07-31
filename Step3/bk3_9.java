@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class bk3_4
+public class bk3_9
 {
 	public static void main(String args[]) throws Exception
 	{
@@ -10,17 +10,13 @@ public class bk3_4
 
 		int a = Integer.parseInt(br.readLine());
 		try{
-			if (a < 1000000){
-				int b ,c, e;
+			if (1<=a && a<=100){
 			
 				for (int i = 0; i < a; i++){
-					StringTokenizer st = new StringTokenizer(br.readLine());
-			
-					b = Integer.parseInt(st.nextToken());
-					c = Integer.parseInt(st.nextToken());
-					e = b + c;
-			
-					bw.write(e + "\n");
+					for (int j = 0; j <=i; j++){
+						bw.write("*");
+					}
+					bw.write("\n");
 				}
 			}
 		}catch(Exception e){
