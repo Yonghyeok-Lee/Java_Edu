@@ -9,20 +9,27 @@ public class bk3_11
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int a = Integer.parseInt(br.readLine());
-		try{
-			if (1<=a && a<=100){
+		
+		StringTokenizer st = new StringTokenizer(br.readLine());
 			
-				for (int i = 0; i <= a; i++){
-					for (int j = a; j >= 0; j--){
-						if (i < j){
-							bw.write(" ");
-						}
-						else {
-							bw.write("*");
-						}
+		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(st.nextToken());
+		
+		String[] list = br.readLine();
+		
+		try{
+			if (1<=b && b<=10000 && 1<=c && c<=10000){
+			
+				for (int i = 0; i < list.size(); i++){
+					String result = list.get(i);
+					if (result > b){
+						list.remove(result);
 					}
-					bw.write("\n");
+					else {
+						
+					}
 				}
+					bw.write("\n");
 			}
 		}catch(Exception e){
 			bw.write("So sad.." + "\n" + e + "\n");
