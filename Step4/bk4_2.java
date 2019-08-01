@@ -8,21 +8,21 @@ public class bk4_2
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		String a = br.readLine();
-
 		try{
-			StringTokenizer st = new StringTokenizer(a);
-			
-			while (st.hasMoreTokens()){	
-				int b = Integer.parseInt(st.nextToken());
-				int c = Integer.parseInt(st.nextToken());
-				int d = c + d;
+
+			while (true){
+				String test = br.readLine();
+				StringTokenizer st = new StringTokenizer(test);
 				
-				if (a == null){
+				int a = Integer.parseInt(st.nextToken());
+				int b = Integer.parseInt(st.nextToken());
+				int c = a + b;
+				
+				if (test == null){
 					break;
 				}
 				
-				bw.write(d + "\n");
+				bw.write(c + "\n");
 			}		
 		}catch(Exception e){
 			bw.write("So sad.." + "\n" + e + "\n");
