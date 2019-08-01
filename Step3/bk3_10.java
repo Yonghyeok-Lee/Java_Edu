@@ -12,8 +12,8 @@ public class bk3_10
 		try{
 			if (1<=a && a<=100){
 			
-				for (int i = 0; i <= a; i++){
-					for (int j = a; j >= 0; j--){
+				for (int i = 1; i <= a; i++){
+					for (int j = a; j >= 1; j--){
 						if (i < j){
 							bw.write(" ");
 						}

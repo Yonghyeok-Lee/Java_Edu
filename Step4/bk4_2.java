@@ -9,18 +9,16 @@ public class bk4_2
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		try{
+			String test = br.readLine();
+			StringTokenizer st = new StringTokenizer(test);
 
-			while (true){
-				String test = br.readLine();
-				StringTokenizer st = new StringTokenizer(test);
-				
+			while (st.hasMoreTokens()){
 				int a = Integer.parseInt(st.nextToken());
 				int b = Integer.parseInt(st.nextToken());
 				int c = a + b;
 				
-				if (test == null){
-					break;
-				}
+				test = br.readLine();
+				st = new StringTokenizer(test);
 				
 				bw.write(c + "\n");
 			}		
