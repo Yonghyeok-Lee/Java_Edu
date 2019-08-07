@@ -25,8 +25,19 @@ public class bk5_5
 
 			// 문제
 			for (int i = 0; i < cute.length; i++){
-				for (int j = i+1; j < cute.length; j++){
+				
+				for (int j = 0; j < cute.length; j++){
 					
+					if (cute[i] == cute[j]) {
+						
+						for (int k = 0; k < results.length; k++) {
+							
+							if (cute[i] != results[k]){
+								results[i] = cute[i];
+								System.out.println("results : " + results[k] + " ,cute : " + cute[i]);
+							}
+						}
+					}
 				}
 			}
 			
