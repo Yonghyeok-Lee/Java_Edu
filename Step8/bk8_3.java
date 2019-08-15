@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class bk8_2
+public class bk8_3
 {
     public static void main(String[] args) throws Exception
     {
@@ -9,6 +9,8 @@ public class bk8_2
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String sel = br.readLine();
+        int five = 0;
+        int three = 0;
         int result = 0;
 
         try{
